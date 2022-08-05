@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  color: #514949;
+}
+
+body {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* First container styling */
+
+.first-container {
+  background-image: url("img/Hero.svg");
+  background-repeat: no-repeat;
+  padding-top: 5%;
+  padding-bottom: 25%;
+}
+
+.content-area {
+  justify-content: center;
+  text-align: center;
+}
+
+.content-area img {
+  margin-bottom: 5.5rem;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.first-paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 480;
+}
+
+.first-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-button-container button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.first-button-container .btn-1 {
+  background-color: #e7332b; /* red */
+  border: none;
+  color: white;
+}
+
+.first-button-container .btn-1:hover {
+  background-color: white;
+  color: #e7332b;
+  border: 1px solid #e7332b;
+}
+
+.first-button-container .btn-2 {
+  background-color: white;
+  color: #e7332b;
+  border: 1px solid #e7332b;
+}
+
+.first-button-container .btn-2:hover {
+  background-color: #e7332b; /* red */
+  border: none;
+  color: white;
+}
+
+/* Second Container Styling */
+.slogan-container {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: -15px;
+}
+.slogan {
+  font-weight: 480;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.card-img-container {
+  background-image: url("https://res.cloudinary.com/dafsch2zs/image/upload/v1596628122/Zuri%20Landing/left_bvmv7q.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 22em;
+}
+
+.card-img-container2 {
+  background-image: url("https://res.cloudinary.com/dafsch2zs/image/upload/v1596628122/Zuri%20Landing/right_yz6hn3.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 22em;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 2rem;
+  padding: 10px 100px;
+}
+
+.card-content {
+  background-color: #fff8f8;
+  padding: 70px 30px;
+}
+
+.card-paragraph {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #e7332b;
+  cursor: pointer;
+}
+
+/*  Footer Styling*/
+.footer-section {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  gap: 8rem;
+  padding-left: 70px;
+  padding-right: 2px;
+  margin-top: 20%;
+  margin-bottom: 7%;
+  line-height: 38px;
+}
+
+.address {
+  line-height: 20px;
+}
+
+hr {
+  width: 90%;
+  margin: auto;
+}
+
+.copyright{
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+
+/* Media query styling */
+/*First Screen */
+
+@media (min-width: 300px) and (max-width: 769px) {
+  .first-container {
+    padding-top: 15%;
+    background-image: url("img/Hero.svg");
+    background-position: center;
+  }
+
+  .first-button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-button-container .btn-2 {
+    margin-top: 1px;
+  }
+
+  .first-paragraph {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: none;
+    margin-right: none;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .card-img-container,
+  .card-img-container2 {
+    background-image: none;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 1;
+  }
+
+  .footer-section{
+      display: grid;
+      grid-template-columns: 2fr;
+      gap: 1rem;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-top: 30%;
+      margin-bottom: 15%;
+      text-align: center;
+  }
+
+  .card-content {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+
+  .slogan{
+    font-size: 23px;
+
+  }
+
+  .footer-logo{
+    width: 30%;
+  }
+
+  h4{
+    font-size: 26px;
+  }
+  a{
+    font-size: 20px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .copyright{
+    margin-top: 5%;
+    margin-bottom: 15%;
+  }
+}
+
+/*Second Screen */
+
+@media (min-width: 770px) and (max-width: 991px) {
+
+  .first-container {
+    padding-top: 10%;
+    background-image: url("img/Hero.svg");
+    background-position: center;
+  }
+  .card-img-container,
+  .card-img-container2 {
+    background-image: none;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 1;
+  }
+
+  .card-content {
+    margin-left: -75px;
+    margin-right: -75px;
+  }
+
+  .card-paragraph {
+    margin-top: 10%;
+    margin-bottom: 5%;
+
+  }
+
+  .footer-section {
+    gap: 3rem;
+    padding-left:25px;
+    padding-right: 0px;
+
+  }
+}
+
+/*Third Screen */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  .card-img-container,
+  .card-img-container2 {
+    background-image: none;
+  }
+
+  .footer-section {
+    gap: 3rem;
+
+  }
+
+
+}
