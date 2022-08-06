@@ -167,7 +167,7 @@ header {
 
 .second-container {
   display: grid;
-  grid-template-columns: 35fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10rem;
   padding: 100px 80px;
   background-image: url(https://talent.zuri.team/static/media/bgsection2.063bd869082548bafa74.png);
@@ -215,15 +215,11 @@ header {
   background-position: right;
   background-size: 20rem;
   background-repeat: no-repeat;
-
 }
-
 
 .section3-button-container {
   display: flex;
   flex-direction: row;
-
-
 }
 
 .section3-header {
@@ -326,8 +322,8 @@ header {
   box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.16);
 }
 
-.fourth-card-container2{
-  padding-left: 230px
+.fourth-card-container2 {
+  padding-left: 230px;
 }
 /*
 .fourth-card-content2{
@@ -401,8 +397,6 @@ footer {
     visibility: hidden;
   }
 
-
-
   .header-button {
     background-color: #e7332b;
     border: none;
@@ -419,7 +413,7 @@ footer {
   .link__bar {
     float: right;
     width: 70%;
-    max-width: 300x;
+    max-width: 300px;
     height: 60px;
     margin-right: 1.5rem;
   }
@@ -537,8 +531,6 @@ footer {
     font-size: 2rem;
     margin-top: 30px;
   }
-
-
 }
 
 @media (min-width: 350px) and (max-width: 500px) {
@@ -553,7 +545,6 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 100px 50px;
-
   }
 
   .section3-button-container {
@@ -574,13 +565,12 @@ footer {
     padding-right: 80px;
   }
 
-  .fourth-card-container2{
-    padding-left: 0px
+  .fourth-card-container2 {
+    padding-left: 0px;
   }
 }
 
 @media (min-width: 600px) and (max-width: 890px) {
-
   .fourth-card-container {
     display: grid;
     grid-template-columns: 3fr 3fr;
@@ -589,7 +579,41 @@ footer {
     padding-right: 80px;
   }
 
-  .fourth-card-container2{
-    padding-left: 0px
+  .fourth-card-container2 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 891px) and (max-width: 1199px) {
+  .first-section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .first-section-img {
+    width: 35rem;
+    margin-right: auto;
+  }
+
+  .first-section-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45rem;
+  }
+
+  .first-section-header {
+    font-size: 2.8rem;
+  }
+  .second-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .second-section-header {
+    font-size: 1.9rem;
   }
 }
