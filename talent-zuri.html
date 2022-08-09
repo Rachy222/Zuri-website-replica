@@ -19,8 +19,9 @@
   </head>
   <body>
 
-    <header class="navbar">
-      <!----------header------------->
+    <!----------header------------->
+
+     <!--<header class="navbar">
 
       <div class="page__logo">
         <a href="#"><img src="img/Zuri-talent-logo.svg" alt="logo" id="logo" /></a>
@@ -42,7 +43,22 @@
 
         </ul>
       </nav>
-    </header>
+    </header>!-->
+
+
+
+    <header id="zuri-talent-head">
+      <nav>
+          <div class="header-logo"><img src="img/Zuri-talent-logo.svg" alt="zuri talent logo"></div>
+          <div class="menu-items">
+              <a class="active" href="talent-zuri.html">Home</a>
+              <a href="talent-zuri.html#section-2">Impact</a>
+              <a href="talent-zuri.html#section-3">Why Us</a>
+
+              <div class="btn-menu"><a href="" class="header-btn">Hire talents</a></div>
+          </div>
+      </nav>
+  </header>
 
     <main>
       <div class="first-section-container">
@@ -50,11 +66,11 @@
           <h1 class="first-section-header">
             Vetted and Trusted <span style="color: #e7332b"> talents </span>
           </h1>
-          <img
+          <div             class="shape"
+          ><img
             src="img/curly-thick-yellow.svg"
             alt="curly-thick-yellow"
-            class="shape"
-          />
+          /></div>
           <p class="first-section-paragraph">
             At Zuri Team, we train, test and place talent in various industries.
             We have access to the best pool of skills in the tech Industry.
@@ -67,15 +83,15 @@
         </div>
         <div class="first-section-content">
           <img
-            src="https://talent.zuri.team/section1.png"
+            src="img/section1.png"
             alt="talent-zuri"
             class="first-section-img"
           />
-          <img
+          <div><img
             src="img/curly-thin-yellow.svg"
             alt="curly-thin-yellow"
             class="shape2"
-          />
+          /></div>
         </div>
       </div>
 
@@ -115,7 +131,7 @@
             <img
               src="https://talent.zuri.team/section2.png"
               alt="section2"
-              style="width: 25rem"
+              class="section2-img"
             />
           </div>
         </div>
@@ -186,8 +202,8 @@
           </div>
         </div>
         <div class="fourth-card-container2">
-          <div class="fourth-card-container" id="card2">
-            <div class="fourth-card-content">
+          <div class="fourth-card-container" id="card2" id="">
+            <div class="fourth-card-content" >
               <img src="img/To-do-icon.svg" alt="To-do-icon" />
               <p class="fourth-paragraph">
                 Contract renewal rate for our consultant is 90 percent.
@@ -200,6 +216,7 @@
                 60% of our consultants are converted to full-time employees.
               </p>
             </div>
+            <div class="fourth-card-conten" id="card2"></div>
           </div>
         </div>
         <div class="btn-container">
@@ -212,7 +229,7 @@
 
     <footer>
       <div class="logo-social-icon-container">
-        <img src="img/Zuri-talent-footer-logo.svg" alt="footer-logo" />
+        <img src="img/Zuri-talent-footer-logo.svg" alt="footer-logo" class="footer-logo"/>
         <div class="social-icon-container">
           <img
             src="img/Facebook-icon.svg"
@@ -225,7 +242,7 @@
             alt="Linkedin-icon"
           />&nbsp;&nbsp;
           <img
-            src="img/twitter-seeklogo.com.svg"
+            src="img/twitter (talent).png"
             class="social-icons"
             alt="twitter-icon"
           />&nbsp;&nbsp;
@@ -239,7 +256,10 @@
 
       <div class="copyright-container">
         <p>© Copyright 2022 ZURI TEAM. All rights Reserved</p>
-        <p>talent@zuri.team</p>
+        <div class="footer-hr-div">
+          <hr class="zuri-talent-footer-hr">
+      </div>
+        <p><a href=""> talent@zuri.team </a></p>
       </div>
     </footer>
   </body>
