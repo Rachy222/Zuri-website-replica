@@ -1,12 +1,513 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /*width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;*/
+}
+
+/* Head styling */
+
+#zuri-training-head {
+  padding: 1.5rem 3.5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgb(255, 253, 245);
+  z-index: 1;
+}
+
+#zuri-training-head .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#zuri-training-head .navbar .menu {
+  display: flex;
+  gap: 5rem;
+}
+
+#zuri-training-head .navbar a {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #585757;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#zuri-training-head .img-text {
+  display: flex;
+  align-items: center;
+}
+
+#zuri-training-head .img-text img {
+  width: 4.5rem;
+  background-color: hsl(3, 80%, 54%);
+  border-radius: 100px;
+  margin-left: -40px;
+  padding: 10px;
+  position: absolute;
+  margin-top: -35px;
+}
+
+#zuri-training-head .img-text .enroll {
+  background: #e7332b;
+  border-radius: 71px;
+  box-shadow: none;
+  color: #fff;
+  padding: 10px 32px;
+  text-decoration: none;
+}
+
+/* Section 1 styling */
+
+.section1-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 13% 5%;
+  background-color: rgb(255, 253, 245);
+  padding-bottom: 8%;
+}
+
+.img1,
+.img2 {
+  width: 300px;
+  height: auto;
+  padding-top: 60px;
+}
+
+.section1-content {
+  text-align: center;
+  justify-content: center;
+}
+
+.section1-content .section1-paragraph-top {
+  color: #e7332b;
+  font-size: 20px;
+}
+
+.section1-header-top {
+  font-size: 50px;
+  line-height: 3.5rem;
+  margin-top: 1rem;
+}
+
+.section1-content .section1-curly-line {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 1.5rem;
+}
+
+.section1-content .section1-curly-line img {
+  width: 10rem;
+}
+
+.section1-paragraph-bottom {
+  font-size: 19px;
+  padding-bottom: 2.5rem;
+  color: #343030;
+}
+
+.section1-button {
+  border: none;
+  background: #e7332b;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.section1-curly-arrow {
+  display: flex;
+  justify-content: right;
+  padding-right: 200px;
+}
+
+.section1-curly-arrow img {
+  width: 20%;
+}
+
+.section1-smallface {
+  display: flex;
+  margin-top: -150px;
+  width: 3.5rem;
+}
+
+/* Section 2 Styling */
+
+.section2-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 5%;
+  background-color: #fffdf5;
+  width: 100%;
+}
+
+.section2-header {
+  font-size: 22px;
+  text-align: left;
+  width: 33.3%;
+}
+
+.section2-img img {
+  width: 10rem;
+  background-color: #fffdf5;
+}
+
+.section2-paragraph {
+  text-align: right;
+  font-size: 27px;
+  width: 33.3%;
+}
+.section2-paragraph a {
+  color: rgb(48, 189, 48);
+  font-size: 25px;
+}
+
+.hr-div {
+  padding: 0px 5%;
+}
+
+.hr-1 {
+  border: 0.7px solid #514949;
+  opacity: 0.2;
+}
+
+/* Section 3 Styling */
+
+.section3-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4% 5%;
+  background-color: #fffdf5;
+  width: 100%;
+}
+
+.section3-content1 {
+  width: 60%;
+}
+
+.section3-content2 {
+  width: 40%;
+  text-align: center;
+}
+
+.section3-content1 .secion3-imgarrow {
+  display: flex;
+  justify-content: center;
+}
+
+.section3-content1 img {
+  width: 7rem;
+}
+
+.section3-content1 p {
+  color: #e7332b;
+  font-size: 22px;
+}
+
+.section3-content1 h3 {
+  font-size: 40px;
+}
+
+.section3-content2 img {
+  width: 15rem;
+  margin-top: 5rem;
+}
+
+/* Section 4 Styling */
+
+.section4-container {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  gap: 1.5rem;
+  background-color: #fff4f067;
+  padding: 4% 5%;
+}
+
+/* Section 4 - Card Stlying 1 */
+
+.section4-cardbox1 {
+  background-color: #e7332b;
+  padding: 50px 40px;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 11px 22px rgba(242, 61, 51, 0.335);
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+
+}
+
+.section4-cardbox1 img {
+  float: right;
+  margin-right: -42px;
+  margin-top: -50px;
+  width: 42%;
+}
+
+.section4-cardbox1 h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section4-cardbox1 h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.section4-cardbox1 p {
+  font-size: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+/* Section 4 - Card Stlying 2 */
+
+.section4-cardbox2 {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 11px 22px rgba(242, 61, 51, 0.335);
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+
+}
+
+.section4-cardbox2 img {
+  float: right;
+  margin-right: -42px;
+  margin-top: -50px;
+  width: 42%;
+}
+
+.section4-cardbox2 h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section4-cardbox2 h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.section4-cardbox2 p {
+  font-size: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+/* Section 4 - Card Stlying 3 */
+
+.section4-cardbox3 {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 11px 22px rgba(242, 61, 51, 0.335);
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+
+}
+
+.section4-cardbox3 img {
+  float: right;
+  margin-right: -42px;
+  margin-top: -50px;
+  width: 42%;
+}
+
+.section4-cardbox3 h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section4-cardbox3 h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.section4-cardbox3 p {
+  font-size: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+/* Section 4 - Card Stlying 4 */
+
+.section4-cardbox4 {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 11px 22px rgba(242, 61, 51, 0.335);
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+
+}
+
+.section4-cardbox4 img {
+  float: right;
+  margin-right: -42px;
+  margin-top: -50px;
+  width: 42%;
+}
+
+.section4-cardbox4 h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section4-cardbox4 h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.section4-cardbox4 p {
+  font-size: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+/* Section 4 - Card Stlying 5 */
+
+.section4-cardbox5 {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 11px 22px rgba(242, 61, 51, 0.335);
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+
+}
+
+.section4-cardbox5 img {
+  float: right;
+  margin-right: -42px;
+  margin-top: -50px;
+  width: 42%;
+}
+
+.section4-cardbox5 h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section4-cardbox5 h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.section4-cardbox5 p {
+  font-size: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+/* Section 4 - Card Stlying 6 */
+
+.section4-cardbox6 {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: 0 11px 22px rgba(242, 61, 51, 0.335);
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+
+}
+
+.section4-cardbox6 img {
+  float: right;
+  margin-right: -42px;
+  margin-top: -50px;
+  width: 42%;
+}
+
+.section4-cardbox6 h2 {
+  font-size: 58px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section4-cardbox6 h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.section4-cardbox6 p {
+  font-size: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.section4-cardbox1:hover,
+.section4-cardbox2:hover,
+.section4-cardbox3:hover,
+.section4-cardbox4:hover,
+.section4-cardbox5:hover,
+.section4-cardbox6:hover {
+  transform: translateY(-15px);
+}
+
+/* Media Query for small Desktop */
+
+@media screen and (min-width: 1001px) and (max-width: 1180px) {
+  #zuri-training-head .navbar-logo img {
+    width: 90%;
   }
 
-  body {
-    font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
-      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  #zuri-training-head .navbar .menu {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  #zuri-training-head .navbar .menu {
+    display: none;
+  }
+  #zuri-training-head .navbar-logo img {
+    width: 90%;
+  }
+}
+
+/* Media Queries for Mobile */
+@media screen and (min-width: 350px) and (max-width: 899px) {
+  #zuri-training-head {
+    padding: 1.5rem;
   }
 
+  #zuri-training-head .img-text img {
+    width: 3.5rem;
+    margin-left: -35px;
+    padding: 10px;
+    margin-top: -27px;
+  }
+
+  #zuri-training-head .navbar .menu {
+    display: none;
+  }
+
+  #zuri-training-head .navbar .navbar-logo {
+    width: 55%;
+  }
+
+  #zuri-training-head .navbar-logo img {
+    width: 80%;
+  }
+
+  #zuri-training-head .img-text .enroll {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

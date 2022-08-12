@@ -458,6 +458,12 @@ footer {
     padding-right: 30px;
   }
 
+  .fourth-card-container2 {
+    padding-left: 0px;
+    padding-right: 0;
+
+  }
+
   .section3-button-container {
     flex-wrap: wrap;
   }
@@ -587,6 +593,8 @@ footer {
 
   .fourth-card-container2 {
     padding-left: 0px;
+    padding-right: 0;
+
   }
 }
 
@@ -601,6 +609,8 @@ footer {
 
   .fourth-card-container2 {
     padding-left: 0px;
+    padding-right: 0;
+
   }
 
   .section3-button-container {
@@ -668,4 +678,5 @@ footer {
   .third-section-container {
     background-image: none;
   }
+  
 }
