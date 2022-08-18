@@ -8,9 +8,12 @@ body {
   font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background: rgb(255, 253, 245);
+
   /*width: 100%;
     margin: 0 auto;
     max-width: 1440px;*/
+  width: fit-content;
 }
 
 /* Head styling */
@@ -669,6 +672,11 @@ body {
 
 .faq-section {
   background: rgb(255, 253, 245);
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .faq-below-content {
@@ -700,47 +708,342 @@ body {
   font-size: 18px;
 }
 
+.accordionContainer {
+  max-width: 1200px;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(64, 50, 50, 0.406);
+  cursor: pointer;
+}
+
+#accordion-container2 {
+  border-bottom: none;
+}
+
+.accordion-wrapper {
+  border: 0.5px solid rgba(44, 41, 41, 0.411);
+}
+
+.question {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 700;
+  color: #343030;
+}
+
+.answer {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.answer p {
+  font-size: 15px;
+  padding-top: 1rem;
+}
+
+.accordionContainer:active .answer {
+  max-height: 300px;
+}
+
+.accordionContainer:active .question svg {
+  transform: rotate(180deg);
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+}
+
 /* Section 8 Styling */
 
-.section8-container{
+.section8-container {
   background: rgb(255, 253, 245);
   padding: 4% 5%;
   text-align: center;
 }
 
-.section8-img-div1{
+.section8-img-div1 {
   display: flex;
   margin-left: 180px;
 }
 
-.section8-img-div1 img, .section8-img-div2 img{
-  width: 8rem
+.section8-img-div1 img,
+.section8-img-div2 img {
+  width: 8rem;
 }
 
-.section8-img-div2{
+.section8-img-div2 {
   display: flex;
   justify-content: end;
 }
 
-.section8-container p{
+.section8-container p {
   font-size: 24px;
   color: #e7332b;
-   margin-top: -90px;
+  margin-top: -90px;
 }
 
-.section8-container h3{
+.section8-container h3 {
   font-size: 40px;
 }
 
-.section8-container .section8-paragraph2{
+.section8-container .section8-paragraph2 {
   font-size: 20px;
-  color:#343030;
+  color: #343030;
   margin: 0px;
   padding-top: 20px;
+}
 
+/* Section 9 Styling */
+.section9-container {
+  background: rgb(255, 253, 245);
+  padding: 1% 5%;
+}
+
+.section9-card-container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.section9-card {
+  padding: 70px;
+  padding-bottom: 30px;
+  background-color: #1b1a20;
+  width: 100%;
+  border-radius: 55px;
+  color: #fff;
+  box-shadow: 0 11px 22px rgba(242, 78, 69, 0.154);
+}
+
+.section9-bottom-img {
+  width: 8rem;
+  float: right;
+  margin-top: -120px;
+}
+
+.section9-bottom-img2 {
+  width: 12rem;
+  float: right;
+  margin-top: -120px;
+}
+
+.traingle-shape {
+  margin-left: -85px;
+  float: right;
+}
+
+.training-dot-red {
+  float: right;
+  width: 8rem;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  transform: rotate(10deg);
+}
+
+.section9-card h2 {
+  font-size: 36px;
+  margin-bottom: 1.5rem;
+}
+
+.section9-card p {
+  font-size: 17px;
+}
+
+.tracks {
+  font-size: 16px;
+  margin-top: 1.5rem;
+}
+
+.tracks ul {
+  margin-bottom: 1.5rem;
+}
+
+.tracks2 {
+  margin-bottom: 1.5rem;
+}
+
+.tracks a {
+  color: white;
+  border-color: white;
+}
+
+.tracks img {
+  width: 0.9rem;
+  cursor: pointer;
+}
+
+/* Modal Main */
+#modal-wrapper {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 100%; /* Very Important because This triggers the event.target section */
+  height: 100%; /* Very Important because This triggers the event.target section */
+}
+
+#modal-wrapper .modal-container {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 5rem;
+  width: 40%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#modal-top h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.01em;
+  line-height: 1.4rem;
+  color: #1b1a20;
+}
+
+#modal-top p {
+  margin-top: 1rem;
+  color: #585757;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  line-height: 1.3rem;
+}
+
+#modal-wrapper p {
+  margin-bottom: 0.5rem;
+}
+
+/* Modal Sample */
+
+#modal-close:hover,
+#modal-close:focus {
+  color: black;
+  fill: currentColor;
+  cursor: pointer;
+}
+
+.footer-hr {
+  display: none;
+}
+
+/* Section10 Styling*/
+
+.section10 {
+  background: rgb(255, 253, 245);
+  padding: 2% 5%;
+}
+.section10-container {
+  background-color: #e7332b;
+  text-align: center;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.section10-container p {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.section10-container h2 {
+  font-size: 55px;
+  margin-bottom: 2rem;
+}
+
+.section10-container a{
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px 40px;
+  color: #e7332b;
+  border-radius: 25px;
 }
 
 
+.section10-bottom-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section10-top-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.At-icon {
+  width: 8rem;
+  margin-top: 10px;
+}
+
+.bottom-circle {
+  float: right;
+  width: 8rem;
+}
+
+.Training-dot-red {
+  width: 6rem;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.top-circle,
+.dot-block {
+  width: 8rem;
+}
+
+/* Footer Styling*/
+
+#zuri-training-footer {
+  padding: 4rem 4.5rem;
+  color: #1b1a20;
+}
+
+#zuri-training-footer .footer-training-top,
+#zuri-training-footer .footer-training-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+#zuri-training-footer .footer-training-top .training-footer-social img {
+  margin-left: 0.3rem;
+}
+
+#zuri-training-footer .footer-training-bottom {
+  margin: 2rem 0 1rem;
+}
+
+#zuri-training-footer .footer-training-bottom .training-footer-policy {
+  display: flex;
+  gap: 1rem;
+}
+
+#zuri-training-footer .footer-training-bottom .training-footer-policy a {
+  text-decoration: none;
+  color: #1b1a20;
+}
+
+.footer-training-hr {
+  display: none;
+}
 
 /* Media Query for small Desktop */
 
